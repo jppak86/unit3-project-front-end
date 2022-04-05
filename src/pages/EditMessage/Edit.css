@@ -1,0 +1,46 @@
+.edit-form {
+  display: flex;
+  padding: 12px;
+  border-top: none;
+  flex-direction: column;
+  background: #7272c8;
+  border: 1px solid #7474a2;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.message-prompt {
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  align-items: center;
+  margin: 10px 0px 20px 0px;
+  color: rgb(200, 200, 200);
+}
+
+.border {
+  width: 100%;
+  height: 16px;
+  border-bottom: 1px solid #292934;
+}
+
+
+.edit-form input{
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #0b0b12;
+  border: 1px solid #292934;
+  color: rgb(200, 200, 200);
+  padding: 15px 10px 15px 10px;
+}
+
+.edit-form button {
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 7px;
+  background: #7551e0;
+  margin: 16px 0px 12px 0px;
+  padding: 12px 16px 12px 16px;
+}

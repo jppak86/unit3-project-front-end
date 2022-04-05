@@ -6,6 +6,9 @@ import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
+import MessageList from './pages/MessageList/MessageList'
+import CreateMessage from './pages/CreateMessage/CreateMessage'
+import EditMessage from './pages/EditMessage/EditMessage'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
@@ -38,6 +41,19 @@ const App = () => {
           path="/profiles"
           element={user ? <Profiles /> : <Navigate to="/login" />}
         />
+        <Route
+          path="/messages"
+          element={user ? <MessageList user={user} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/new"
+          element={user ? <CreateMessage user={user} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/edit"
+          element={user ? <EditMessage user={user} /> : <Navigate to="/login" />}
+        />
+
       </Routes>
     </>
   )
